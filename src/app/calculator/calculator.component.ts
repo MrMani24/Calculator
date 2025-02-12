@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 })
 export class CalculatorComponent {
   current: string = '0'
-  n1: string = ''
+  n1: string = '0'
   n2: string = ''
   op: string = '';
   ja = '';
@@ -61,7 +61,7 @@ export class CalculatorComponent {
   }
   ac() {
     this.current = '0'
-    this.n1 = ''
+    this.n1 = '0'
     this.n2 = ''
     this.op = ''
     this.ja = '';
