@@ -1,0 +1,40 @@
+<div class="A1" >
+  <div class="calculator">
+    <div class="number" >
+      <div class="n1">{{n1}} {{op}} {{n2}}</div>
+      <div class="n2">{{current}}</div>
+    </div>
+    <div class="buttons">
+      <div>
+        <button id="s1" (click)="ac()" >AC</button>
+        <button id="s1" (click)="onBackspace()" >←</button>
+        <button id="s1" (click)="operator('%')" >%</button>
+        <button (click)="operator('/')" id="s1" >÷</button>
+      </div>
+      <div>
+        <button (click)="digit('7')" >7</button>
+        <button (click)="digit('8')" >8</button>
+        <button (click)="digit('9')" >9</button>
+        <button id="s1"(click)="operator('*')">✕</button>
+      </div>
+      <div>
+        <button (click)="digit('4')" >4</button>
+        <button (click)="digit('5')" >5</button>
+        <button (click)="digit('6')" >6</button>
+        <button id="s1" (click)="operator('-')" >-</button>
+      </div>
+      <div>
+        <button (click)="digit('1')" >1</button>
+        <button (click)="digit('2')" >2</button>
+        <button (click)="digit('3')" >3</button>
+        <button id="s1"(click)="operator('+')">+</button>
+      </div>
+      <div>
+        <button id="s1" >His</button>
+        <button (click)="digit('0')" >0</button>
+        <button (click)="dot()" >.</button>
+        <button (click)="equal()" style="background-color: gold;">=</button>
+      </div>
+    </div>
+  </div>
+
